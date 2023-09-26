@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 35px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: darkcyan;
+        }
+        input {
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+            text-align: center;
+        }
+        button {
+            width: 62%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+            background-color: rgb(64, 240, 64);
+            cursor: pointer;
+        }
+        #productList {
+            background-color: rgb(17, 41, 62);
+            width: 60%;
+            margin: auto;
+            margin-top: 5px;
+            padding: 10px;
+            list-style: none;
+            color: rgb(10, 238, 33);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1.2rem
+        }
+        #btn-remove {
+            width: 25%;
+            display: flex;
+            background-color: red;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+        #btn-edit {
+            width: 25%;
+            display: flex;
+            background-color: rgb(70, 13, 175);
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Product Management</h1>
+    <input type="text" id="productName" placeholder="Product Name">
+    <input type="number" id="productPrice" placeholder="Product Price">
+    <button onclick="addProduct()">Add Product</button>
+    <li id="productList"></li>
+    <script src="app.js"></script>
+   </div>
+</body>
+</html>
